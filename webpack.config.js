@@ -8,7 +8,7 @@ module.exports = {
   entry: "./src/index.js", // 2
   output: {
     // 3
-    filename: "bundle.[hash].js", // 4
+    filename: "main.js", //
   },
 
   module: {

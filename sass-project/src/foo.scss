@@ -1,0 +1,50 @@
+$site_max_width: 960px;
+$font_color: #333;
+$link_color: #00c;
+$font_family: Arial, sans-serif;
+$font_size: 16px;
+$line_height: percentage(20px / $font_size);
+
+body {
+  color: $font_color;
+
+  // Property Nesting
+  font: {
+    size: $font_size;
+    family: $font_family;
+  }
+
+  line-height: $line_height;
+}
+
+#main {
+  width: 100%;
+  max-width: $site_max_width;
+}
+
+.box {
+  font: {
+    size: 10px;
+    weight: bold;
+  }
+  margin: {
+    top: 10px;
+    bottom: 20px;
+  }
+  padding: {
+    left: 30px;
+    right: 40px;
+  }
+}
+
+@mixin dash-line($width: 1px, $color: black) {
+  border: $width dashed $color;
+}
+
+.box1 {
+  @include dash-line;
+}
+
+.box2 {
+  @include dash-line(3px, orange);
+}

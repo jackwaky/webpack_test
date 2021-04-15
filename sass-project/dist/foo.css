@@ -1,0 +1,30 @@
+body {
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 125%;
+}
+
+#main {
+  width: 100%;
+  max-width: 960px;
+}
+
+.box {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.box1 {
+  border: 1px dashed black;
+}
+
+.box2 {
+  border: 3px dashed orange;
+}
+
+/*# sourceMappingURL=foo.css.map */
